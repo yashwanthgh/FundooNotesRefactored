@@ -1,0 +1,157 @@
+2024-05-18 13:22:00.4461|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Yash\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-18 13:22:00.6946|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5188
+2024-05-18 13:22:00.6946|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-18 13:22:00.6946|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-18 13:22:00.6946|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Code\RefactoredFundooNotes\FundooNotes\FundooNotes
+2024-05-18 13:22:02.6866|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/swagger/index.html - - -
+2024-05-18 13:22:03.7246|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/swagger/index.html - 200 - text/html;charset=utf-8 1050.2466ms
+2024-05-18 13:22:03.8019|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/_framework/aspnetcore-browser-refresh.js - - -
+2024-05-18 13:22:03.8019|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 3.0064ms
+2024-05-18 13:22:03.8273|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/_vs/browserLink - - -
+2024-05-18 13:22:04.6437|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 816.4694ms
+2024-05-18 13:22:04.9485|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - - -
+2024-05-18 13:22:05.5195|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 571.1131ms
+2024-05-18 13:25:03.3461|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Yash\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-18 13:25:03.9446|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5188
+2024-05-18 13:25:03.9446|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-18 13:25:03.9446|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-18 13:25:03.9446|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Code\RefactoredFundooNotes\FundooNotes\FundooNotes
+2024-05-18 13:25:04.7673|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/swagger/index.html - - -
+2024-05-18 13:25:04.9908|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/swagger/index.html - 200 - text/html;charset=utf-8 227.8782ms
+2024-05-18 13:25:05.0173|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/_framework/aspnetcore-browser-refresh.js - - -
+2024-05-18 13:25:05.0173|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/_vs/browserLink - - -
+2024-05-18 13:25:05.0202|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 2.8879ms
+2024-05-18 13:25:05.0699|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 52.6403ms
+2024-05-18 13:25:05.2007|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - - -
+2024-05-18 13:25:05.3021|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 101.3632ms
+2024-05-18 13:30:39.1496|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Yash\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-18 13:30:39.6746|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5188
+2024-05-18 13:30:39.6746|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-18 13:30:39.6746|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-18 13:30:39.6746|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Code\RefactoredFundooNotes\FundooNotes\FundooNotes
+2024-05-18 13:30:40.1950|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/swagger/index.html - - -
+2024-05-18 13:30:40.5069|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/swagger/index.html - 200 - text/html;charset=utf-8 322.1513ms
+2024-05-18 13:30:40.5353|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/_framework/aspnetcore-browser-refresh.js - - -
+2024-05-18 13:30:40.5421|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/_vs/browserLink - - -
+2024-05-18 13:30:40.5421|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 8.5575ms
+2024-05-18 13:30:40.6131|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 70.9935ms
+2024-05-18 13:30:40.7147|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - - -
+2024-05-18 13:30:40.8232|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 108.5855ms
+2024-05-18 13:33:18.6966|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5188/api/register - application/json 132
+2024-05-18 13:33:18.6966|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect.
+2024-05-18 13:33:18.7666|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.RegisterController.RegisterUser (FundooNotes)'
+2024-05-18 13:33:18.7908|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RegisterUser", controller = "Register"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(ModelLayer.RegisterModel.RegisterUserModel) on controller FundooNotes.Controllers.RegisterController (FundooNotes).
+2024-05-18 13:33:20.1329|INFO|FundooNotes.Controllers.RegisterController|User Registration Successful
+2024-05-18 13:33:20.1437|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel'.
+2024-05-18 13:33:20.1437|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.RegisterController.RegisterUser (FundooNotes) in 1354.7161ms
+2024-05-18 13:33:20.1437|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.RegisterController.RegisterUser (FundooNotes)'
+2024-05-18 13:33:20.1437|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5188/api/register - 200 - application/json;+charset=utf-8 1455.4543ms
+2024-05-18 13:34:39.0751|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5188/api/register - application/json 121
+2024-05-18 13:34:39.0751|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.RegisterController.RegisterUser (FundooNotes)'
+2024-05-18 13:34:39.0876|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RegisterUser", controller = "Register"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(ModelLayer.RegisterModel.RegisterUserModel) on controller FundooNotes.Controllers.RegisterController (FundooNotes).
+2024-05-18 13:34:39.2457|INFO|FundooNotes.Controllers.RegisterController|User Registration Successful
+2024-05-18 13:34:39.2457|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel'.
+2024-05-18 13:34:39.2457|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.RegisterController.RegisterUser (FundooNotes) in 157.7047ms
+2024-05-18 13:34:39.2457|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.RegisterController.RegisterUser (FundooNotes)'
+2024-05-18 13:34:39.2471|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5188/api/register - 200 - application/json;+charset=utf-8 171.9614ms
+2024-05-18 13:34:56.8637|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5188/api/register - application/json 128
+2024-05-18 13:34:56.8825|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.RegisterController.RegisterUser (FundooNotes)'
+2024-05-18 13:34:56.8825|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RegisterUser", controller = "Register"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(ModelLayer.RegisterModel.RegisterUserModel) on controller FundooNotes.Controllers.RegisterController (FundooNotes).
+2024-05-18 13:34:57.0369|INFO|FundooNotes.Controllers.RegisterController|User Registration Successful
+2024-05-18 13:34:57.0369|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel'.
+2024-05-18 13:34:57.0369|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.RegisterController.RegisterUser (FundooNotes) in 153.2531ms
+2024-05-18 13:34:57.0369|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.RegisterController.RegisterUser (FundooNotes)'
+2024-05-18 13:34:57.0369|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5188/api/register - 200 - application/json;+charset=utf-8 174.5276ms
+2024-05-18 13:35:14.0952|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5188/api/register - application/json 137
+2024-05-18 13:35:14.0952|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.RegisterController.RegisterUser (FundooNotes)'
+2024-05-18 13:35:14.0952|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RegisterUser", controller = "Register"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(ModelLayer.RegisterModel.RegisterUserModel) on controller FundooNotes.Controllers.RegisterController (FundooNotes).
+2024-05-18 13:35:14.2954|ERROR|FundooNotes.Controllers.RegisterController|Registration unsuccessful
+2024-05-18 13:35:14.2954|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel'.
+2024-05-18 13:35:14.2954|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.RegisterController.RegisterUser (FundooNotes) in 199.5974ms
+2024-05-18 13:35:14.2954|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.RegisterController.RegisterUser (FundooNotes)'
+2024-05-18 13:35:14.2963|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5188/api/register - 200 - application/json;+charset=utf-8 201.2586ms
+2024-05-18 13:35:52.3043|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5188/api/register - application/json 137
+2024-05-18 13:35:52.3043|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.RegisterController.RegisterUser (FundooNotes)'
+2024-05-18 13:35:52.3043|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RegisterUser", controller = "Register"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(ModelLayer.RegisterModel.RegisterUserModel) on controller FundooNotes.Controllers.RegisterController (FundooNotes).
+2024-05-18 13:35:52.3805|ERROR|FundooNotes.Controllers.RegisterController|Registration unsuccessful
+2024-05-18 13:35:52.3805|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel'.
+2024-05-18 13:35:52.3805|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.RegisterController.RegisterUser (FundooNotes) in 67.8344ms
+2024-05-18 13:35:52.3805|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.RegisterController.RegisterUser (FundooNotes)'
+2024-05-18 13:35:52.3805|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5188/api/register - 200 - application/json;+charset=utf-8 77.2634ms
+2024-05-18 13:36:09.4714|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5188/api/register - application/json 137
+2024-05-18 13:36:09.4714|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.RegisterController.RegisterUser (FundooNotes)'
+2024-05-18 13:36:09.4889|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RegisterUser", controller = "Register"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(ModelLayer.RegisterModel.RegisterUserModel) on controller FundooNotes.Controllers.RegisterController (FundooNotes).
+2024-05-18 13:36:09.5682|ERROR|FundooNotes.Controllers.RegisterController|Registration unsuccessful
+2024-05-18 13:36:09.5682|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel'.
+2024-05-18 13:36:09.5682|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.RegisterController.RegisterUser (FundooNotes) in 79.4167ms
+2024-05-18 13:36:09.5682|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.RegisterController.RegisterUser (FundooNotes)'
+2024-05-18 13:36:09.5682|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5188/api/register - 200 - application/json;+charset=utf-8 97.9411ms
+2024-05-18 13:36:24.9285|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5188/api/register - application/json 133
+2024-05-18 13:36:24.9285|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.RegisterController.RegisterUser (FundooNotes)'
+2024-05-18 13:36:24.9285|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RegisterUser", controller = "Register"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(ModelLayer.RegisterModel.RegisterUserModel) on controller FundooNotes.Controllers.RegisterController (FundooNotes).
+2024-05-18 13:36:25.0930|INFO|FundooNotes.Controllers.RegisterController|User Registration Successful
+2024-05-18 13:36:25.0930|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel'.
+2024-05-18 13:36:25.0930|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.RegisterController.RegisterUser (FundooNotes) in 146.0573ms
+2024-05-18 13:36:25.0930|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.RegisterController.RegisterUser (FundooNotes)'
+2024-05-18 13:36:25.0930|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5188/api/register - 200 - application/json;+charset=utf-8 165.5603ms
+2024-05-18 13:36:44.1525|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5188/api/register - application/json 135
+2024-05-18 13:36:44.1525|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.RegisterController.RegisterUser (FundooNotes)'
+2024-05-18 13:36:44.1525|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RegisterUser", controller = "Register"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(ModelLayer.RegisterModel.RegisterUserModel) on controller FundooNotes.Controllers.RegisterController (FundooNotes).
+2024-05-18 13:36:44.2376|ERROR|FundooNotes.Controllers.RegisterController|Registration unsuccessful
+2024-05-18 13:36:44.2376|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel'.
+2024-05-18 13:36:44.2376|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.RegisterController.RegisterUser (FundooNotes) in 84.6322ms
+2024-05-18 13:36:44.2376|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.RegisterController.RegisterUser (FundooNotes)'
+2024-05-18 13:36:44.2376|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5188/api/register - 200 - application/json;+charset=utf-8 85.8949ms
+2024-05-18 13:37:01.8208|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5188/api/register - application/json 134
+2024-05-18 13:37:01.8208|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.RegisterController.RegisterUser (FundooNotes)'
+2024-05-18 13:37:01.8208|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RegisterUser", controller = "Register"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(ModelLayer.RegisterModel.RegisterUserModel) on controller FundooNotes.Controllers.RegisterController (FundooNotes).
+2024-05-18 13:37:01.9721|INFO|FundooNotes.Controllers.RegisterController|User Registration Successful
+2024-05-18 13:37:01.9721|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel'.
+2024-05-18 13:37:01.9721|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.RegisterController.RegisterUser (FundooNotes) in 150.4686ms
+2024-05-18 13:37:01.9721|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.RegisterController.RegisterUser (FundooNotes)'
+2024-05-18 13:37:01.9721|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5188/api/register - 200 - application/json;+charset=utf-8 152.3578ms
+2024-05-18 13:37:51.9626|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5188/api/login - application/json 67
+2024-05-18 13:37:51.9626|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.LoginController.UserLogin (FundooNotes)'
+2024-05-18 13:37:51.9626|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "UserLogin", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserLogin(ModelLayer.LoginModel.LoginUserModel) on controller FundooNotes.Controllers.LoginController (FundooNotes).
+2024-05-18 13:37:52.1687|INFO|FundooNotes.Controllers.LoginController|User login successful!
+2024-05-18 13:37:52.1687|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-18 13:37:52.1706|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.LoginController.UserLogin (FundooNotes) in 201.4824ms
+2024-05-18 13:37:52.1706|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.LoginController.UserLogin (FundooNotes)'
+2024-05-18 13:37:52.1706|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5188/api/login - 200 - application/json;+charset=utf-8 211.7879ms
+2024-05-18 13:39:07.4680|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5188/api/createlabel - application/json 40
+2024-05-18 13:39:07.5260|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.LabelController.CreateLabel (FundooNotes)'
+2024-05-18 13:39:07.5260|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "CreateLabel", controller = "Label"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateLabel(ModelLayer.LabelModel.LabelCreateModel) on controller FundooNotes.Controllers.LabelController (FundooNotes).
+2024-05-18 13:39:07.5693|INFO|FundooNotes.Controllers.LabelController|Label Created Successfully!
+2024-05-18 13:39:07.5693|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel'.
+2024-05-18 13:39:07.5693|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.LabelController.CreateLabel (FundooNotes) in 39.944ms
+2024-05-18 13:39:07.5693|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.LabelController.CreateLabel (FundooNotes)'
+2024-05-18 13:39:07.5693|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5188/api/createlabel - 200 - application/json;+charset=utf-8 102.2018ms
+2024-05-18 13:39:48.5547|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/api/showlabels - - -
+2024-05-18 13:39:48.5547|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.LabelController.GetAllLabels (FundooNotes)'
+2024-05-18 13:39:48.5547|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllLabels", controller = "Label"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllLabels() on controller FundooNotes.Controllers.LabelController (FundooNotes).
+2024-05-18 13:39:48.5755|INFO|FundooNotes.Controllers.LabelController|Labels fetched successfully!
+2024-05-18 13:39:48.5755|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.Collections.Generic.IEnumerable`1[[RepositoryLayer.Entities.Label, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-18 13:39:48.5755|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.LabelController.GetAllLabels (FundooNotes) in 15.0702ms
+2024-05-18 13:39:48.5755|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.LabelController.GetAllLabels (FundooNotes)'
+2024-05-18 13:39:48.5755|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/api/showlabels - 200 - application/json;+charset=utf-8 23.5909ms
+2024-05-18 13:40:02.1460|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/api/showlabel/1 - - -
+2024-05-18 13:40:02.1694|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.LabelController.GetAllLabelById (FundooNotes)'
+2024-05-18 13:40:02.1694|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllLabelById", controller = "Label"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllLabelById(Int32) on controller FundooNotes.Controllers.LabelController (FundooNotes).
+2024-05-18 13:40:02.2006|INFO|FundooNotes.Controllers.LabelController|Label fetched successfully!
+2024-05-18 13:40:02.2006|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[RepositoryLayer.Entities.Label, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-18 13:40:02.2006|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.LabelController.GetAllLabelById (FundooNotes) in 24.0333ms
+2024-05-18 13:40:02.2006|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.LabelController.GetAllLabelById (FundooNotes)'
+2024-05-18 13:40:02.2006|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/api/showlabel/1 - 200 - application/json;+charset=utf-8 56.6571ms
+2024-05-18 13:40:08.1317|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/api/showlabel/3 - - -
+2024-05-18 13:40:08.1317|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.LabelController.GetAllLabelById (FundooNotes)'
+2024-05-18 13:40:08.1317|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllLabelById", controller = "Label"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllLabelById(Int32) on controller FundooNotes.Controllers.LabelController (FundooNotes).
+2024-05-18 13:40:08.2058|ERROR|FundooNotes.Controllers.LabelController|Some error occured!. Sequence contains no elements
+2024-05-18 13:40:08.2058|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-18 13:40:08.2058|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.LabelController.GetAllLabelById (FundooNotes) in 73.4807ms
+2024-05-18 13:40:08.2058|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.LabelController.GetAllLabelById (FundooNotes)'
+2024-05-18 13:40:08.2058|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/api/showlabel/3 - 200 - application/json;+charset=utf-8 75.4719ms
+2024-05-18 13:41:51.9522|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Yash\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-18 13:41:52.2880|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5188
+2024-05-18 13:41:52.2880|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-18 13:41:52.2880|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-18 13:41:52.2880|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Code\RefactoredFundooNotes\FundooNotes\FundooNotes

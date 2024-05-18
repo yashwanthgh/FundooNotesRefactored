@@ -1,0 +1,201 @@
+2024-05-17 09:13:22.5845|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Yash\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-17 09:13:23.0402|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5188
+2024-05-17 09:13:23.0402|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-17 09:13:23.0402|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-17 09:13:23.0402|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Code\RefactoredFundooNotes\FundooNotes\FundooNotes
+2024-05-17 09:13:26.1768|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/swagger/index.html - - -
+2024-05-17 09:13:26.6658|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/swagger/index.html - 200 - text/html;charset=utf-8 510.0091ms
+2024-05-17 09:13:26.6830|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/_framework/aspnetcore-browser-refresh.js - - -
+2024-05-17 09:13:26.6830|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/_vs/browserLink - - -
+2024-05-17 09:13:26.6830|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 3.5789ms
+2024-05-17 09:13:26.7908|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 107.9910ms
+2024-05-17 09:13:26.8881|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - - -
+2024-05-17 09:13:26.9985|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 110.4052ms
+2024-05-17 10:02:34.5458|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Yash\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-17 10:02:34.8184|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5188
+2024-05-17 10:02:34.8184|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-17 10:02:34.8184|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-17 10:02:34.8184|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Code\RefactoredFundooNotes\FundooNotes\FundooNotes
+2024-05-17 10:02:35.5003|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/swagger/index.html - - -
+2024-05-17 10:02:35.7615|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/swagger/index.html - 200 - text/html;charset=utf-8 272.0626ms
+2024-05-17 10:02:35.7916|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/_framework/aspnetcore-browser-refresh.js - - -
+2024-05-17 10:02:35.7916|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 3.0589ms
+2024-05-17 10:02:35.8035|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/_vs/browserLink - - -
+2024-05-17 10:02:35.8415|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 38.0258ms
+2024-05-17 10:02:35.9711|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - - -
+2024-05-17 10:02:36.0669|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 95.7994ms
+2024-05-17 10:06:15.8380|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5188/api/forgotpassword - application/json 41
+2024-05-17 10:06:15.8436|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect.
+2024-05-17 10:06:15.9342|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.LoginController.ForgotPassword (FundooNotes)'
+2024-05-17 10:06:15.9636|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "ForgotPassword", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgotPassword(ModelLayer.LoginModel.ForgetPasswordModel) on controller FundooNotes.Controllers.LoginController (FundooNotes).
+2024-05-17 10:06:20.1922|INFO|FundooNotes.Controllers.LoginController|Forgot password!
+2024-05-17 10:06:20.1999|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel'.
+2024-05-17 10:06:20.1999|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.LoginController.ForgotPassword (FundooNotes) in 4238.7347ms
+2024-05-17 10:06:20.1999|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.LoginController.ForgotPassword (FundooNotes)'
+2024-05-17 10:06:20.2124|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5188/api/forgotpassword - 200 - application/json;+charset=utf-8 4374.2033ms
+2024-05-17 10:07:30.3773|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 PATCH http://localhost:5188/api/resetpassword - application/json 93
+2024-05-17 10:07:30.3773|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.LoginController.RestPassword (FundooNotes)'
+2024-05-17 10:07:30.3973|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RestPassword", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RestPassword(ModelLayer.LoginModel.ResetPasswordModel) on controller FundooNotes.Controllers.LoginController (FundooNotes).
+2024-05-17 10:07:31.5677|ERROR|FundooNotes.Controllers.LoginController|Reset pssword unsuccessful
+2024-05-17 10:07:31.5677|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel'.
+2024-05-17 10:07:31.5677|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.LoginController.RestPassword (FundooNotes) in 1171.6952ms
+2024-05-17 10:07:31.5677|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.LoginController.RestPassword (FundooNotes)'
+2024-05-17 10:07:31.5677|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 PATCH http://localhost:5188/api/resetpassword - 200 - application/json;+charset=utf-8 1194.0454ms
+2024-05-17 10:08:05.7262|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 PATCH http://localhost:5188/api/resetpassword - application/json 93
+2024-05-17 10:08:05.7262|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.LoginController.RestPassword (FundooNotes)'
+2024-05-17 10:08:05.7262|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RestPassword", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RestPassword(ModelLayer.LoginModel.ResetPasswordModel) on controller FundooNotes.Controllers.LoginController (FundooNotes).
+2024-05-17 10:08:06.7969|ERROR|FundooNotes.Controllers.LoginController|Reset pssword unsuccessful
+2024-05-17 10:08:06.7969|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel'.
+2024-05-17 10:08:06.7969|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.LoginController.RestPassword (FundooNotes) in 1062.2218ms
+2024-05-17 10:08:06.7969|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.LoginController.RestPassword (FundooNotes)'
+2024-05-17 10:08:06.7969|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 PATCH http://localhost:5188/api/resetpassword - 200 - application/json;+charset=utf-8 1072.7983ms
+2024-05-17 10:09:01.7271|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Yash\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-17 10:09:01.9327|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5188
+2024-05-17 10:09:01.9327|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-17 10:09:01.9327|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-17 10:09:01.9327|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Code\RefactoredFundooNotes\FundooNotes\FundooNotes
+2024-05-17 10:09:02.5825|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/swagger/index.html - - -
+2024-05-17 10:09:02.8660|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/swagger/index.html - 200 - text/html;charset=utf-8 292.0499ms
+2024-05-17 10:09:02.8843|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/_framework/aspnetcore-browser-refresh.js - - -
+2024-05-17 10:09:02.8843|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/_vs/browserLink - - -
+2024-05-17 10:09:02.8843|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 2.9322ms
+2024-05-17 10:09:02.9528|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 67.1227ms
+2024-05-17 10:09:03.0592|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - - -
+2024-05-17 10:09:03.1609|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 101.7740ms
+2024-05-17 10:09:19.3920|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 PATCH http://localhost:5188/api/resetpassword - application/json 93
+2024-05-17 10:09:19.3920|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect.
+2024-05-17 10:09:19.4632|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.LoginController.RestPassword (FundooNotes)'
+2024-05-17 10:09:19.4858|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RestPassword", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RestPassword(ModelLayer.LoginModel.ResetPasswordModel) on controller FundooNotes.Controllers.LoginController (FundooNotes).
+2024-05-17 10:11:24.4378|ERROR|FundooNotes.Controllers.LoginController|Reset pssword unsuccessful
+2024-05-17 10:11:27.0703|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel'.
+2024-05-17 10:11:27.1094|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.LoginController.RestPassword (FundooNotes) in 127618.6685ms
+2024-05-17 10:11:27.1094|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.LoginController.RestPassword (FundooNotes)'
+2024-05-17 10:11:27.1094|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 PATCH http://localhost:5188/api/resetpassword - 200 - application/json;+charset=utf-8 127718.3422ms
+2024-05-17 10:14:08.8309|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Yash\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-17 10:14:09.0338|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5188
+2024-05-17 10:14:09.0365|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-17 10:14:09.0365|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-17 10:14:09.0365|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Code\RefactoredFundooNotes\FundooNotes\FundooNotes
+2024-05-17 10:14:09.4821|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/swagger/index.html - - -
+2024-05-17 10:14:09.7281|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/swagger/index.html - 200 - text/html;charset=utf-8 260.6337ms
+2024-05-17 10:14:09.7411|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/_vs/browserLink - - -
+2024-05-17 10:14:09.7411|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/_framework/aspnetcore-browser-refresh.js - - -
+2024-05-17 10:14:09.7411|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 3.1987ms
+2024-05-17 10:14:09.8304|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 89.4039ms
+2024-05-17 10:14:10.0666|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - - -
+2024-05-17 10:14:10.1855|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 118.9627ms
+2024-05-17 10:14:19.5890|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 PATCH http://localhost:5188/api/resetpassword - application/json 93
+2024-05-17 10:14:19.5890|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect.
+2024-05-17 10:14:19.6647|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.LoginController.RestPassword (FundooNotes)'
+2024-05-17 10:14:19.6898|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RestPassword", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RestPassword(ModelLayer.LoginModel.ResetPasswordModel) on controller FundooNotes.Controllers.LoginController (FundooNotes).
+2024-05-17 10:16:18.3666|ERROR|FundooNotes.Controllers.LoginController|Reset pssword unsuccessful
+2024-05-17 10:16:18.8734|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel'.
+2024-05-17 10:16:18.9061|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.LoginController.RestPassword (FundooNotes) in 119211.4574ms
+2024-05-17 10:16:18.9061|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.LoginController.RestPassword (FundooNotes)'
+2024-05-17 10:16:18.9061|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 PATCH http://localhost:5188/api/resetpassword - 200 - application/json;+charset=utf-8 119317.9625ms
+2024-05-17 10:16:57.3314|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Yash\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-17 10:16:57.5371|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5188
+2024-05-17 10:16:57.5371|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-17 10:16:57.5371|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-17 10:16:57.5371|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Code\RefactoredFundooNotes\FundooNotes\FundooNotes
+2024-05-17 10:16:58.1112|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/swagger/index.html - - -
+2024-05-17 10:16:58.3348|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/swagger/index.html - 200 - text/html;charset=utf-8 226.0303ms
+2024-05-17 10:16:58.3494|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/_vs/browserLink - - -
+2024-05-17 10:16:58.3494|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/_framework/aspnetcore-browser-refresh.js - - -
+2024-05-17 10:16:58.3494|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 3.3841ms
+2024-05-17 10:16:58.4093|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 60.0563ms
+2024-05-17 10:16:58.6297|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - - -
+2024-05-17 10:16:58.7349|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 105.2241ms
+2024-05-17 10:17:08.0818|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 PATCH http://localhost:5188/api/resetpassword - application/json 93
+2024-05-17 10:17:08.0920|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect.
+2024-05-17 10:17:08.1578|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.LoginController.RestPassword (FundooNotes)'
+2024-05-17 10:17:08.1833|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RestPassword", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RestPassword(ModelLayer.LoginModel.ResetPasswordModel) on controller FundooNotes.Controllers.LoginController (FundooNotes).
+2024-05-17 10:21:45.9083|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Yash\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-17 10:21:46.1293|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5188
+2024-05-17 10:21:46.1293|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-17 10:21:46.1293|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-17 10:21:46.1293|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Code\RefactoredFundooNotes\FundooNotes\FundooNotes
+2024-05-17 10:21:46.5555|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/swagger/index.html - - -
+2024-05-17 10:21:46.8243|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/swagger/index.html - 200 - text/html;charset=utf-8 282.6550ms
+2024-05-17 10:21:46.8400|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/_vs/browserLink - - -
+2024-05-17 10:21:46.8400|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/_framework/aspnetcore-browser-refresh.js - - -
+2024-05-17 10:21:46.8400|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 5.6641ms
+2024-05-17 10:21:46.8920|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 52.0507ms
+2024-05-17 10:21:47.0076|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - - -
+2024-05-17 10:21:47.1226|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 115.0009ms
+2024-05-17 10:21:57.5851|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 PATCH http://localhost:5188/api/resetpassword - application/json 93
+2024-05-17 10:21:57.5851|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect.
+2024-05-17 10:21:57.6673|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.LoginController.RestPassword (FundooNotes)'
+2024-05-17 10:21:57.6961|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RestPassword", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RestPassword(ModelLayer.LoginModel.ResetPasswordModel) on controller FundooNotes.Controllers.LoginController (FundooNotes).
+2024-05-17 10:22:34.1814|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Yash\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-17 10:22:34.4016|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5188
+2024-05-17 10:22:34.4016|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-17 10:22:34.4016|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-17 10:22:34.4016|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Code\RefactoredFundooNotes\FundooNotes\FundooNotes
+2024-05-17 10:22:34.8675|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/swagger/index.html - - -
+2024-05-17 10:22:35.1080|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/swagger/index.html - 200 - text/html;charset=utf-8 242.4411ms
+2024-05-17 10:22:35.1245|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/_vs/browserLink - - -
+2024-05-17 10:22:35.1245|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/_framework/aspnetcore-browser-refresh.js - - -
+2024-05-17 10:22:35.1245|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 3.0007ms
+2024-05-17 10:22:35.1847|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 60.4850ms
+2024-05-17 10:22:35.3024|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - - -
+2024-05-17 10:22:35.4151|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 112.9638ms
+2024-05-17 10:23:07.3996|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5188/api/forgotpassword - application/json 41
+2024-05-17 10:23:07.4208|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect.
+2024-05-17 10:23:07.5096|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.LoginController.ForgotPassword (FundooNotes)'
+2024-05-17 10:23:07.5395|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "ForgotPassword", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgotPassword(ModelLayer.LoginModel.ForgetPasswordModel) on controller FundooNotes.Controllers.LoginController (FundooNotes).
+2024-05-17 10:23:11.2575|INFO|FundooNotes.Controllers.LoginController|Forgot password!
+2024-05-17 10:23:11.2575|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel'.
+2024-05-17 10:23:11.2720|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.LoginController.ForgotPassword (FundooNotes) in 3727.1096ms
+2024-05-17 10:23:11.2720|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.LoginController.ForgotPassword (FundooNotes)'
+2024-05-17 10:23:11.2720|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5188/api/forgotpassword - 200 - application/json;+charset=utf-8 3874.2239ms
+2024-05-17 10:23:44.6698|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 PATCH http://localhost:5188/api/resetpassword - application/json 94
+2024-05-17 10:23:44.6698|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.LoginController.RestPassword (FundooNotes)'
+2024-05-17 10:23:44.6910|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RestPassword", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RestPassword(ModelLayer.LoginModel.ResetPasswordModel) on controller FundooNotes.Controllers.LoginController (FundooNotes).
+2024-05-17 10:24:46.3586|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Yash\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-17 10:24:46.5619|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5188
+2024-05-17 10:24:46.5619|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-17 10:24:46.5619|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-17 10:24:46.5619|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Code\RefactoredFundooNotes\FundooNotes\FundooNotes
+2024-05-17 10:24:47.1893|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/swagger/index.html - - -
+2024-05-17 10:24:47.4525|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/swagger/index.html - 200 - text/html;charset=utf-8 272.9533ms
+2024-05-17 10:24:47.4661|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/_framework/aspnetcore-browser-refresh.js - - -
+2024-05-17 10:24:47.4661|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/_vs/browserLink - - -
+2024-05-17 10:24:47.4661|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 3.7317ms
+2024-05-17 10:24:47.5227|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 56.7139ms
+2024-05-17 10:24:47.6330|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - - -
+2024-05-17 10:24:47.7299|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 96.8431ms
+2024-05-17 10:25:14.8063|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 PATCH http://localhost:5188/api/resetpassword - application/json 94
+2024-05-17 10:25:14.8145|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect.
+2024-05-17 10:25:14.8720|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.LoginController.RestPassword (FundooNotes)'
+2024-05-17 10:25:14.8932|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RestPassword", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RestPassword(ModelLayer.LoginModel.ResetPasswordModel) on controller FundooNotes.Controllers.LoginController (FundooNotes).
+2024-05-17 10:26:22.8736|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Yash\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-17 10:26:23.0999|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5188
+2024-05-17 10:26:23.0999|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-17 10:26:23.0999|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-17 10:26:23.0999|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Code\RefactoredFundooNotes\FundooNotes\FundooNotes
+2024-05-17 10:26:23.5650|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/swagger/index.html - - -
+2024-05-17 10:26:23.8141|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/swagger/index.html - 200 - text/html;charset=utf-8 262.0524ms
+2024-05-17 10:26:23.8296|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/_framework/aspnetcore-browser-refresh.js - - -
+2024-05-17 10:26:23.8296|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/_vs/browserLink - - -
+2024-05-17 10:26:23.8327|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 2.9082ms
+2024-05-17 10:26:23.8848|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 55.5774ms
+2024-05-17 10:26:23.9840|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - - -
+2024-05-17 10:26:24.1058|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 121.8905ms
+2024-05-17 10:26:50.1397|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 PATCH http://localhost:5188/api/resetpassword - application/json 94
+2024-05-17 10:26:50.1397|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect.
+2024-05-17 10:26:50.2066|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.LoginController.RestPassword (FundooNotes)'
+2024-05-17 10:26:50.2315|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RestPassword", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RestPassword(ModelLayer.LoginModel.ResetPasswordModel) on controller FundooNotes.Controllers.LoginController (FundooNotes).
+2024-05-17 10:27:22.4032|INFO|FundooNotes.Controllers.LoginController|Password reste successful!
+2024-05-17 10:27:27.9141|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel'.
+2024-05-17 10:27:27.9516|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.LoginController.RestPassword (FundooNotes) in 37715.6258ms
+2024-05-17 10:27:27.9516|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.LoginController.RestPassword (FundooNotes)'
+2024-05-17 10:27:27.9543|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 PATCH http://localhost:5188/api/resetpassword - 200 - application/json;+charset=utf-8 37814.5892ms
+2024-05-17 10:28:38.6707|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 POST http://localhost:5188/api/login - application/json 75
+2024-05-17 10:28:38.6707|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundooNotes.Controllers.LoginController.UserLogin (FundooNotes)'
+2024-05-17 10:28:38.6891|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "UserLogin", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserLogin(ModelLayer.LoginModel.LoginUserModel) on controller FundooNotes.Controllers.LoginController (FundooNotes).
+2024-05-17 10:28:39.6937|INFO|FundooNotes.Controllers.LoginController|User login successful!
+2024-05-17 10:28:39.6937|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'ModelLayer.ResponseModel.ResponseModel`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-17 10:28:39.6937|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundooNotes.Controllers.LoginController.UserLogin (FundooNotes) in 1006.6451ms
+2024-05-17 10:28:39.6937|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundooNotes.Controllers.LoginController.UserLogin (FundooNotes)'
+2024-05-17 10:28:39.6937|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 POST http://localhost:5188/api/login - 200 - application/json;+charset=utf-8 1029.9324ms

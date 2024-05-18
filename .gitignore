@@ -42,3 +42,4 @@ StyleCopReport.xml
 # MSTest test Results
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
+.vs
