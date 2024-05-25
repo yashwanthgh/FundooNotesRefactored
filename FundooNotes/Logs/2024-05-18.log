@@ -155,3 +155,11 @@
 2024-05-18 13:41:52.2880|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
 2024-05-18 13:41:52.2880|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
 2024-05-18 13:41:52.2880|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Code\RefactoredFundooNotes\FundooNotes\FundooNotes
+2024-05-18 13:41:53.1582|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/swagger/index.html - - -
+2024-05-18 13:41:53.4282|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/swagger/index.html - 200 - text/html;charset=utf-8 275.5349ms
+2024-05-18 13:41:53.4508|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/_vs/browserLink - - -
+2024-05-18 13:41:53.4508|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/_framework/aspnetcore-browser-refresh.js - - -
+2024-05-18 13:41:53.4508|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 2.8819ms
+2024-05-18 13:41:53.5067|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 56.4512ms
+2024-05-18 13:41:53.6166|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - - -
+2024-05-18 13:41:53.7341|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 117.5550ms

@@ -100,13 +100,12 @@ namespace RepositoryLayer.Services
                     throw new InvalidEmailException("Email Dosn't exists, Register first!");
                 }
 
-                // Getting random token
                 string otp = GenerateOtp();
                 int getIdOfUser = connection.QueryFirstOrDefault<int>("spGetUserIdForEmail", new { model.Email }, commandType: CommandType.StoredProcedure);
 
                 connection.Execute("spUpdateResetPasswordOtp", new { UserId = getIdOfUser, Otp = otp, Expiry = DateTime.UtcNow.AddMinutes(15) }, commandType: CommandType.StoredProcedure);
 
-                return await SendOtpToEmail(new SendEmailModel { Email = model.Email, Otp = otp });
+                return await SendOtpToEmail(new SendOtpToEmailModel { Email = model.Email, Otp = otp });
             }
             return false;
         }
@@ -135,8 +134,7 @@ namespace RepositoryLayer.Services
             {
                 throw new OtpExpiredException("Token has expired!");
             }
-
-            // Hashing the password using BCrypt 
+ 
             var hashPassword = BCrypt.Net.BCrypt.HashPassword(model.Password);
             await connection.ExecuteAsync("spUpdatePasswordUsingEmail", new { model.Email, NewPassword = hashPassword }, commandType: CommandType.StoredProcedure);
 
@@ -166,7 +164,7 @@ namespace RepositoryLayer.Services
         }
 
         // Logic to send OTP to the users mail
-        private async Task<bool> SendOtpToEmail(SendEmailModel model)
+        private async Task<bool> SendOtpToEmail(SendOtpToEmailModel model)
         {
             if (model == null) return false;
             if (model.Email == null) return false;

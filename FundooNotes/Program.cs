@@ -41,6 +41,10 @@ public class Program
         builder.Services.AddScoped<ILoginBL, LoginServiceBL>();
         builder.Services.AddScoped<ILabelRL, LabelServiceRL>();
         builder.Services.AddScoped<ILabelBL, LabelServiceBL>();
+        builder.Services.AddScoped<INoteRL, NoteServiceRL>();
+        builder.Services.AddScoped<INoteBL, NoteServiceBL>();
+        builder.Services.AddScoped<ICollaborationRL, CollaborationServiceRL>();
+        builder.Services.AddScoped<ICollaborationBL, CollaborationServiceBL>();
 
         builder.Services.AddControllers();
         builder.Services.AddEndpointsApiExplorer();
@@ -99,7 +103,7 @@ public class Program
                              Id = "Bearer" 
                         }
                      },
-                     new string[] {} 
+                     Array.Empty<string>()
                 }
             });
         });

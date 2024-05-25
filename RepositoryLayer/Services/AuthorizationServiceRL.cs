@@ -23,22 +23,38 @@ namespace RepositoryLayer.Services
 
         public string GenerateJwtToken(User user)
         {
+            if (user == null)
+            {
+                throw new ArgumentNullException(nameof(user));
+            }
+
             var tokenHandler = new JwtSecurityTokenHandler();
-            var key = Encoding.ASCII.GetBytes(_configuration["JwtSetting:SecretKey"]);
+            var keyValue = _configuration["JwtSetting:SecretKey"];
+            if (string.IsNullOrEmpty(keyValue))
+            {
+                throw new ArgumentException("JWT secret key is missing.");
+            }
+
+            var key = Encoding.ASCII.GetBytes(keyValue);
+            if (key.Length < 32)
+            {
+                throw new ArgumentException("JWT secret key must be at least 256 bits (32 bytes).");
+            }
+
             var issuer = _configuration["JwtSetting:Issuer"];
             var audience = _configuration["JwtSetting:Audience"];
 
-            if (key.Length < 32)
+            if (string.IsNullOrEmpty(issuer) || string.IsNullOrEmpty(audience))
             {
-                throw new ArgumentException("JWT secret key must be at least 256 bits (32 bytes)");
+                throw new ArgumentException("Issuer and Audience must be defined in configuration.");
             }
-            
+
             var claims = new[]
             {
                 new Claim("UserId", user.UserId.ToString()),
-                new Claim("LastName", user.LastName),
-                new Claim("FirstName", user.FirstName),
-                new Claim(ClaimTypes.Email, user.Email)
+                new Claim("FirstName", user.FirstName ?? string.Empty),
+                new Claim("LastName", user.LastName ?? string.Empty),
+                new Claim(ClaimTypes.Email, user.Email ?? string.Empty)
             };
 
             var tokenDescriptor = new SecurityTokenDescriptor

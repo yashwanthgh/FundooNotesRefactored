@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ModelLayer.EmailModel
 {
-    public class SendEmailModel
+    public class SendOtpToEmailModel
     {
         public string? Email { get; set; }
         public string? Otp { get; set; }

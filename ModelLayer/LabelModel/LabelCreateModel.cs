@@ -8,6 +8,6 @@ namespace ModelLayer.LabelModel
 {
     public class LabelCreateModel
     {
-        public string? LabelName { get; set; }
+        public string? LabelName { get; set; } = "Notes";
     }
 }

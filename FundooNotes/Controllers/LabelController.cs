@@ -1,11 +1,10 @@
 ﻿using BusinessLayer.Interfaces;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ModelLayer.LabelModel;
 using ModelLayer.ResponseModel;
 using RepositoryLayer.Entities;
-using System.Reflection;
+using System.ComponentModel.DataAnnotations;
 using System.Security.Claims;
 
 namespace FundooNotes.Controllers
@@ -24,8 +23,8 @@ namespace FundooNotes.Controllers
         }
 
         [Authorize]
-        [HttpPost("createlabel")]
-        public async Task<IActionResult> CreateLabel(LabelCreateModel model)
+        [HttpPost("createLabel")]
+        public async Task<IActionResult> CreateLabel([Required] LabelCreateModel model)
         {
             try
             {
@@ -53,7 +52,7 @@ namespace FundooNotes.Controllers
         }
 
         [Authorize]
-        [HttpGet("showlabels")]
+        [HttpGet("getLabels")]
         public async Task<IActionResult> GetAllLabels()
         {
             try
@@ -81,8 +80,8 @@ namespace FundooNotes.Controllers
         }
 
         [Authorize]
-        [HttpGet("showlabel/{labelId}")]
-        public async Task<IActionResult> GetAllLabelById(int labelId)
+        [HttpGet("getLabel/{labelId}")]
+        public async Task<IActionResult> GetAllLabelById([Required] int labelId)
         {
             try
             {
@@ -93,6 +92,34 @@ namespace FundooNotes.Controllers
                     Success = true,
                     Message = "Label fetched successfully!",
                     Data = labels
+                };
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Some error occured!. {ex.Message}");
+                var response = new ResponseModel<string>
+                {
+                    Success = false,
+                    Message = "Some error occured!",
+                    Data = ex.Message
+                };
+                return Ok(response);
+            }
+        }
+
+        [Authorize]
+        [HttpDelete("deleteLabel/{labelId}")]
+        public async Task<IActionResult> DeleteLabel([Required] int labelId)
+        {
+            try
+            {
+                var labels = await _label.DeleteLabel(labelId);
+                _logger.LogInformation("Label deleted successfully!");
+                var response = new ResponseModel
+                {
+                    Success = true,
+                    Message = "Label deleted successfully!",
                 };
                 return Ok(response);
             }

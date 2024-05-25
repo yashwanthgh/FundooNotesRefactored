@@ -4,16 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RepositoryLayer.Entities
+namespace ModelLayer.NoteModel
 {
-    public class Note
+    public class CreateNoteResponseModel
     {
         public int NoteId { get; set; }
+        public int LabelId { get; set; }
         public string? Title { get; set; }
         public string? Description { get; set; }
         public string? Color { get; set; }
-        public bool IsArchived { get; set; }
-        public bool IsDeleted { get; set; }
-        public DateTime? TimeRemaining { get; set; }
     }
 }

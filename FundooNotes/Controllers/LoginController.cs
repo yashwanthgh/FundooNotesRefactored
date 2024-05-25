@@ -50,7 +50,7 @@ namespace FundooNotes.Controllers
             }
         }
 
-        [HttpPost("forgotpassword")]
+        [HttpPost("forgotPassword")]
         public async Task<IActionResult> ForgotPassword([Required] ForgetPasswordModel model)
         {
             try
@@ -75,7 +75,7 @@ namespace FundooNotes.Controllers
             }
         }
 
-        [HttpPatch("resetpassword")]
+        [HttpPatch("resetPassword")]
         public async Task<IActionResult> RestPassword([Required] ResetPasswordModel model)
         {
             try
@@ -101,7 +101,7 @@ namespace FundooNotes.Controllers
             }
         }
 
-        [HttpPatch("updatepassword")]
+        [HttpPatch("updatePassword")]
         public async Task<IActionResult> UpdatePassword(UpdatePasswordModel model)
         {
             try

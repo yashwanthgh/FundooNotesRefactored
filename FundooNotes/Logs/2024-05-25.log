@@ -1,0 +1,141 @@
+2024-05-25 12:50:42.3577|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Yash\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-25 12:50:42.6156|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5188
+2024-05-25 12:50:42.6156|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-25 12:50:42.6156|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-25 12:50:42.6156|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Code\RefactoredFundooNotes\FundooNotes\FundooNotes
+2024-05-25 12:50:46.7978|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/swagger/index.html - - -
+2024-05-25 12:50:47.1301|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/swagger/index.html - 200 - text/html;charset=utf-8 344.3565ms
+2024-05-25 12:50:47.1749|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/_framework/aspnetcore-browser-refresh.js - - -
+2024-05-25 12:50:47.1749|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 4.6326ms
+2024-05-25 12:50:47.1749|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/_vs/browserLink - - -
+2024-05-25 12:50:47.3941|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 209.4933ms
+2024-05-25 12:50:47.5838|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - - -
+2024-05-25 12:50:47.6157|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/swagger/favicon-32x32.png - - -
+2024-05-25 12:50:47.6157|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-05-25 12:50:47.6157|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/swagger/favicon-32x32.png - 200 628 image/png 15.1212ms
+2024-05-25 12:50:47.7094|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 125.6910ms
+2024-05-25 13:48:31.5259|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Yash\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-25 13:48:31.7959|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5188
+2024-05-25 13:48:31.7959|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-25 13:48:31.7959|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-25 13:48:31.7959|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Code\RefactoredFundooNotes\FundooNotes\FundooNotes
+2024-05-25 13:48:32.4422|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/swagger/index.html - - -
+2024-05-25 13:48:32.6904|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/swagger/index.html - 200 - text/html;charset=utf-8 253.4687ms
+2024-05-25 13:48:32.7100|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/_framework/aspnetcore-browser-refresh.js - - -
+2024-05-25 13:48:32.7100|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/_vs/browserLink - - -
+2024-05-25 13:48:32.7100|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 4.4992ms
+2024-05-25 13:48:32.7525|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 42.1917ms
+2024-05-25 13:48:32.9814|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - - -
+2024-05-25 13:48:33.0606|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.|Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - FundooNotes.Controllers.NoteController.GetAllArchivedNotes (FundooNotes). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-25 13:48:33.0893|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - 500 - text/plain;+charset=utf-8 107.9368ms
+2024-05-25 13:48:51.7075|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Yash\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-25 13:48:51.9811|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5188
+2024-05-25 13:48:51.9811|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-25 13:48:51.9811|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-25 13:48:51.9811|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Code\RefactoredFundooNotes\FundooNotes\FundooNotes
+2024-05-25 13:48:52.5551|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/swagger/index.html - - -
+2024-05-25 13:48:52.8498|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/swagger/index.html - 200 - text/html;charset=utf-8 304.4917ms
+2024-05-25 13:48:52.8647|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/_framework/aspnetcore-browser-refresh.js - - -
+2024-05-25 13:48:52.8647|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/_vs/browserLink - - -
+2024-05-25 13:48:52.8713|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 6.7130ms
+2024-05-25 13:48:52.9100|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 44.7781ms
+2024-05-25 13:48:53.0094|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - - -
+2024-05-25 13:48:53.0808|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.|Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - FundooNotes.Controllers.NoteController.GetAllArchivedNotes (FundooNotes). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-25 13:48:53.1003|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - 500 - text/plain;+charset=utf-8 90.9708ms
+2024-05-25 13:50:29.7399|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Yash\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-25 13:50:29.9561|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5188
+2024-05-25 13:50:29.9561|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-25 13:50:29.9561|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-25 13:50:29.9561|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Code\RefactoredFundooNotes\FundooNotes\FundooNotes
+2024-05-25 13:50:30.6379|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/swagger/index.html - - -
+2024-05-25 13:50:30.9293|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/swagger/index.html - 200 - text/html;charset=utf-8 299.1025ms
+2024-05-25 13:50:30.9453|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/_framework/aspnetcore-browser-refresh.js - - -
+2024-05-25 13:50:30.9453|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/_vs/browserLink - - -
+2024-05-25 13:50:30.9453|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 3.6993ms
+2024-05-25 13:50:30.9881|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 42.6048ms
+2024-05-25 13:50:31.0994|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - - -
+2024-05-25 13:50:31.1699|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.|Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - FundooNotes.Controllers.NoteController.GetAllArchivedNotes (FundooNotes). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-25 13:50:31.1900|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - 500 - text/plain;+charset=utf-8 90.6185ms
+2024-05-25 13:54:23.1664|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Yash\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-25 13:54:23.4826|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5188
+2024-05-25 13:54:23.4826|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-25 13:54:23.4826|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-25 13:54:23.4826|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Code\RefactoredFundooNotes\FundooNotes\FundooNotes
+2024-05-25 13:54:23.8447|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/swagger/index.html - - -
+2024-05-25 13:54:24.0840|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/swagger/index.html - 200 - text/html;charset=utf-8 243.8224ms
+2024-05-25 13:54:24.1006|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/_framework/aspnetcore-browser-refresh.js - - -
+2024-05-25 13:54:24.1006|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/_vs/browserLink - - -
+2024-05-25 13:54:24.1006|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 7.2575ms
+2024-05-25 13:54:24.1392|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 38.2831ms
+2024-05-25 13:54:24.2450|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - - -
+2024-05-25 13:54:24.3493|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 104.2877ms
+2024-05-25 21:04:49.4060|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Yash\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-25 21:04:49.6692|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5188
+2024-05-25 21:04:49.6692|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-25 21:04:49.6692|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-25 21:04:49.6692|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Code\RefactoredFundooNotes\FundooNotes\FundooNotes
+2024-05-25 21:04:51.6119|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/swagger/index.html - - -
+2024-05-25 21:04:52.3381|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/swagger/index.html - 200 - text/html;charset=utf-8 744.7920ms
+2024-05-25 21:04:52.3754|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/_framework/aspnetcore-browser-refresh.js - - -
+2024-05-25 21:04:52.3771|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/_vs/browserLink - - -
+2024-05-25 21:04:52.3771|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 7.1165ms
+2024-05-25 21:04:52.6788|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 301.7813ms
+2024-05-25 21:04:52.7954|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - - -
+2024-05-25 21:04:52.9741|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 178.5525ms
+2024-05-25 21:06:09.5716|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Yash\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-25 21:06:09.8357|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5188
+2024-05-25 21:06:09.8357|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-25 21:06:09.8357|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-25 21:06:09.8357|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Code\RefactoredFundooNotes\FundooNotes\FundooNotes
+2024-05-25 21:06:10.9073|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/swagger/index.html - - -
+2024-05-25 21:06:11.2270|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/swagger/index.html - 200 - text/html;charset=utf-8 327.1245ms
+2024-05-25 21:06:11.2853|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/_framework/aspnetcore-browser-refresh.js - - -
+2024-05-25 21:06:11.2853|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/_vs/browserLink - - -
+2024-05-25 21:06:11.2853|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 5.1002ms
+2024-05-25 21:06:11.3507|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 65.0800ms
+2024-05-25 21:06:11.4569|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - - -
+2024-05-25 21:06:11.5468|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 89.9882ms
+2024-05-25 21:43:15.9044|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Yash\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-25 21:43:16.0640|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5188
+2024-05-25 21:43:16.0640|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-25 21:43:16.0640|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-25 21:43:16.0640|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Code\RefactoredFundooNotes\FundooNotes\FundooNotes
+2024-05-25 21:43:17.0379|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/swagger/index.html - - -
+2024-05-25 21:43:17.3374|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/swagger/index.html - 200 - text/html;charset=utf-8 308.5493ms
+2024-05-25 21:43:17.4241|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/_framework/aspnetcore-browser-refresh.js - - -
+2024-05-25 21:43:17.4400|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/_vs/browserLink - - -
+2024-05-25 21:43:17.4546|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 30.4962ms
+2024-05-25 21:43:17.4999|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 59.9714ms
+2024-05-25 21:43:17.6042|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - - -
+2024-05-25 21:43:17.7133|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 109.2825ms
+2024-05-25 21:45:47.5237|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\Yash\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-25 21:45:47.6968|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5188
+2024-05-25 21:45:47.6968|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-05-25 21:45:47.6968|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-05-25 21:45:47.6968|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Code\RefactoredFundooNotes\FundooNotes\FundooNotes
+2024-05-25 21:45:48.5369|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/swagger/index.html - - -
+2024-05-25 21:45:48.8835|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/swagger/index.html - 200 - text/html;charset=utf-8 361.4541ms
+2024-05-25 21:45:49.0004|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/_framework/aspnetcore-browser-refresh.js - - -
+2024-05-25 21:45:49.0054|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/_vs/browserLink - - -
+2024-05-25 21:45:49.0054|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 7.1806ms
+2024-05-25 21:45:49.0718|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 66.3869ms
+2024-05-25 21:45:49.2102|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - - -
+2024-05-25 21:45:49.3026|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5188/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 92.4089ms
