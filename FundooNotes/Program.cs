@@ -1,6 +1,8 @@
+using BusinessLayer.Helper;
 using BusinessLayer.Interfaces;
 using BusinessLayer.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
@@ -45,6 +47,16 @@ public class Program
         builder.Services.AddScoped<INoteBL, NoteServiceBL>();
         builder.Services.AddScoped<ICollaborationRL, CollaborationServiceRL>();
         builder.Services.AddScoped<ICollaborationBL, CollaborationServiceBL>();
+
+        // Redis configuration
+        var redisConfiguration = builder.Configuration.GetSection("Redis")["RedisConnection"];
+        if(redisConfiguration != null)
+        {
+            builder.Services.AddSingleton<IDistributedCache, CacheService>(sp =>
+            {
+                return new CacheService(redisConfiguration);
+            });
+        }
 
         builder.Services.AddControllers();
         builder.Services.AddEndpointsApiExplorer();

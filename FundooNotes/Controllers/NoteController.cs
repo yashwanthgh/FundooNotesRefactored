@@ -25,7 +25,7 @@ namespace FundooNotes.Controllers
 
         [Authorize]
         [HttpPost("createNote/{labelId}")]
-        public async Task<IActionResult> CreateNotes([Required] CreateNoteModel model, [Required] int labelId)
+        public async Task<IActionResult> CreateNotes([Required] CreateNoteModel model, int labelId)
         {
             try
             {
@@ -188,11 +188,11 @@ namespace FundooNotes.Controllers
 
         [Authorize]
         [HttpPatch("retriveFromTrash/{noteId}")]
-        public async Task<IActionResult> RetriveFromTrash([Required] int noteId)
+        public async Task<IActionResult> RetrieveFromTrash([Required] int noteId)
         {
             try
             {
-                await _note.RetriveFromTrash(noteId);
+                await _note.RetrieveFromTrash(noteId);
                 _logger.LogInformation("Notes moved out of trash successfully");
                 var response = new ResponseModel
                 {

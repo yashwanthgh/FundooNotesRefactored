@@ -3,6 +3,7 @@ using System.Data;
 using ModelLayer.NoteModel;
 using RepositoryLayer.Interfaces;
 using RepositoryLayer.Contexts;
+using System.Data.Common;
 
 namespace RepositoryLayer.Services
 {
@@ -20,9 +21,6 @@ namespace RepositoryLayer.Services
             var parameters = new DynamicParameters();
             parameters.Add("Title", model.Title, DbType.String);
             parameters.Add("Description", model.Description, DbType.String);
-            parameters.Add("Colour", model.Color, DbType.String);
-            parameters.Add("IsArchived", model.IsArchived, DbType.Boolean);
-            parameters.Add("IsDeleted", model.IsDeleted, DbType.Boolean);
             parameters.Add("LabelId", labelId, DbType.Int64);
 
             using (var connection = _context.CreateConnection())
@@ -51,11 +49,11 @@ namespace RepositoryLayer.Services
             }
         }
 
-        public async Task RetriveFromTrash(int noteId)
+        public async Task RetrieveFromTrash(int noteId)
         {
             var parameters = new DynamicParameters();
             parameters.Add("NoteId", noteId, DbType.Int64);
-            parameters.Add("IsDeleted", true);
+            parameters.Add("IsDeleted", false);
             parameters.Add("TimeRemaining", null);
             using (var connection = _context.CreateConnection())
             {
@@ -89,7 +87,7 @@ namespace RepositoryLayer.Services
         {
             using (var connection = _context.CreateConnection())
             {
-                return await connection.QueryAsync<NoteResponseModel>("spGetAllNotesByLabelId", labelId, commandType: CommandType.StoredProcedure);
+                return await connection.QueryAsync<NoteResponseModel>("spGetAllNotesByLabelId", new { labelId }, commandType: CommandType.StoredProcedure);
             }
         }
 
@@ -118,7 +116,8 @@ namespace RepositoryLayer.Services
 
             using (var connection = _context.CreateConnection())
             {
-                var updatedNote = await connection.QueryFirstOrDefaultAsync<CreateNoteResponseModel>("spUpdateNote", parameters, commandType: CommandType.StoredProcedure );
+                await connection.QueryFirstOrDefaultAsync<CreateNoteResponseModel>("spUpdateNote", parameters, commandType: CommandType.StoredProcedure);
+                var updatedNote = await connection.QueryFirstOrDefaultAsync<CreateNoteResponseModel>("spGetNotesByNoteId", new { NoteID = noteId }, commandType: CommandType.StoredProcedure);
 
                 if (updatedNote == null)
                 {
@@ -126,7 +125,22 @@ namespace RepositoryLayer.Services
                 }
                 return updatedNote;
             }
+        }
 
+        public async Task<CreateNoteResponseModel> GetNoteById(int noteId)
+        {
+            var parameters = new DynamicParameters();
+            parameters.Add("@NoteId", noteId);
+
+            using(var connection = _context.CreateConnection())
+            {
+                var note = await connection.QueryFirstOrDefaultAsync<CreateNoteResponseModel>("spGetNotesByNoteId", parameters, commandType: CommandType.StoredProcedure);
+                if(note != null)
+                {
+                    return note;
+                }
+                throw new Exception("Note dont exist");
+            }
         }
     }
 }

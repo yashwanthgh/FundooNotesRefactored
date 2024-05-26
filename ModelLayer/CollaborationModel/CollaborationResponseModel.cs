@@ -8,7 +8,8 @@ namespace ModelLayer.CollaborationModel
 {
     public class CollaborationResponseModel
     {
-        public string? Email { get; set; }
+        public int CollaborationID { get; set; }
+        public string? CollaborationEmail { get; set; }
         public int NoteId { get; set; }
     }
 }

@@ -30,7 +30,7 @@ namespace FundooNotes.Controllers
             {
                 var userIdClaim = User.FindFirstValue("UserId");
                 int userId = Convert.ToInt32(userIdClaim);
-                await _collaboration.AddCollaboration(userId, model);
+                bool _ = await _collaboration.AddCollaboration(userId, model);
                 _logger.LogInformation("Collaboration successful");
                 var response = new ResponseModel
                 {
@@ -57,7 +57,9 @@ namespace FundooNotes.Controllers
         {
             try
             {
-                var collaborations = await _collaboration.GetAllCollaborations();
+                var userIdClaim = User.FindFirstValue("UserId");
+                int userId = Convert.ToInt32(userIdClaim);
+                var collaborations = await _collaboration.GetAllCollaborations(userId);
                 _logger.LogInformation("Getting all collaborations");
                 var response = new ResponseModel<IEnumerable<CollaborationResponseModel>>
                 {

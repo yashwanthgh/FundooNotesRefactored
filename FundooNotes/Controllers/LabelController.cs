@@ -57,7 +57,9 @@ namespace FundooNotes.Controllers
         {
             try
             {
-                var labels = await _label.GetAllLabels();
+                var userIdClaim = User.FindFirstValue("UserId");
+                int userId = Convert.ToInt32(userIdClaim);
+                var labels = await _label.GetAllLabels(userId);
                 _logger.LogInformation("Labels fetched successfully!");
                 var response = new ResponseModel<IEnumerable<Label>>
                 {
@@ -85,7 +87,9 @@ namespace FundooNotes.Controllers
         {
             try
             {
-                var labels = await _label.GetLabel(labelId);
+                var userIdClaim = User.FindFirstValue("UserId");
+                int userId = Convert.ToInt32(userIdClaim);
+                var labels = await _label.GetLabel(userId, labelId);
                 _logger.LogInformation("Label fetched successfully!");
                 var response = new ResponseModel<Label>
                 {

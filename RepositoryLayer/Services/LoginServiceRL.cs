@@ -81,7 +81,7 @@ namespace RepositoryLayer.Services
 
                 Parameter.Add("Email", model.Email, DbType.String);
                 var hashPassword = BCrypt.Net.BCrypt.HashPassword(model.NewPassword);
-                Parameter.Add("Password", hashPassword, DbType.String);
+                Parameter.Add("NewPassword", hashPassword, DbType.String);
                 await connection.ExecuteAsync("spUpdatePassword", Parameter, commandType: CommandType.StoredProcedure);
                 return true;
             }

@@ -15,7 +15,7 @@ namespace BusinessLayer.Interfaces
         public Task<IEnumerable<NoteResponseModel>> GetAllArchivedNotes();
         public Task<CreateNoteResponseModel> UpdateNote(UpdateNoteModel model, int noteId);
         public Task MoveToTrash(int noteId);
-        public Task RetriveFromTrash(int noteId);
+        public Task RetrieveFromTrash(int noteId);
         public Task MoveToArchive(int noteId);
         public Task RemoveFromArchive(int noteId);
     }

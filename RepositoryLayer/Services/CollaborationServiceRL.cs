@@ -8,6 +8,7 @@ using System.Text.RegularExpressions;
 using RepositoryLayer.GlobalExceptions;
 using System.Net.Mail;
 using System.Net;
+using System.Reflection;
 
 namespace RepositoryLayer.Services
 {
@@ -23,10 +24,10 @@ namespace RepositoryLayer.Services
             _emailSetting = emailSetting;
         }
 
-        public async Task AddCollaboration(int userId, CreateCollaborationModel model)
+        public async Task<bool> AddCollaboration(int userId, CreateCollaborationModel model)
         {
             if(model == null) { throw  new ArgumentNullException("model"); }
-            if(model.CollaborationEmail == null || IsEmailValid(model.CollaborationEmail)) { throw new Exception("Email should not be null"); }
+            if(model.CollaborationEmail == null || !IsEmailValid(model.CollaborationEmail)) { throw new Exception("Email should not be null"); }
             
             var parameters = new DynamicParameters();
             parameters.Add("UserId", userId, DbType.Int64);
@@ -36,25 +37,31 @@ namespace RepositoryLayer.Services
             using(var connection  = _context.CreateConnection())
             {
                 var getEmailUsingUserId = await connection.QueryFirstOrDefaultAsync<string>("spGetEmailByUserId", new { UserId = userId}, commandType: CommandType.StoredProcedure);  
-                var ifEmailExists = await connection.QueryFirstOrDefaultAsync<bool>("spCheckEmailExists", new { getEmailUsingUserId }, commandType: CommandType.StoredProcedure);
+                var ifEmailExists = await connection.QueryFirstOrDefaultAsync<bool>("spCheckEmailExists", new { Email = getEmailUsingUserId }, commandType: CommandType.StoredProcedure);
                 if(!ifEmailExists)
                 {
                     throw new InvalidEmailException("Email don't exist, Register first!");
                 }
-                await connection.ExecuteAsync("spAddCollaboration", parameters, commandType: CommandType.StoredProcedure);
-                var userInfo = await connection.QueryFirstOrDefault("spGetUserInfoByEmail", new { getEmailUsingUserId }, commandType: CommandType.StoredProcedure);
-                if(userInfo != null)
+                bool ifCollaborationExists = await connection.QueryFirstOrDefaultAsync<bool>("spCheckAlreadyCollaborated", new { Email = model.CollaborationEmail, model.NoteId }, commandType: CommandType.StoredProcedure);
+                if(ifCollaborationExists)
                 {
-                    await SendEmail(getEmailUsingUserId, model.CollaborationEmail, userInfo.FirstName);
+                    throw new Exception("Collaboration already exists for the notes");
                 }
+                await connection.ExecuteAsync("spAddCollaboration", parameters, commandType: CommandType.StoredProcedure);
+                var userInfo = connection.QueryFirstOrDefault("spGetUserInfoByEmail", new { Email = getEmailUsingUserId }, commandType: CommandType.StoredProcedure);
+                if (userInfo != null)
+                {
+                    return await SendEmail(getEmailUsingUserId, model.CollaborationEmail, userInfo.FirstName);
+                }
+                return false;
             }
         }
 
-        public async Task<IEnumerable<CollaborationResponseModel>> GetAllCollaborations()
+        public async Task<IEnumerable<CollaborationResponseModel>> GetAllCollaborations(int userId)
         {
             using(var connection = _context.CreateConnection())
             {
-                return await connection.QueryAsync<CollaborationResponseModel>("spGetAllCollaborations", commandType: CommandType.StoredProcedure);
+                return await connection.QueryAsync<CollaborationResponseModel>("spGetAllCollaborations",new { userId }, commandType: CommandType.StoredProcedure);
             }
         }
 
@@ -75,7 +82,7 @@ namespace RepositoryLayer.Services
             return Regex.IsMatch(email, pattern);
         }
 
-        private void SendEmail(string from, string to, string name)
+        private async Task<bool> SendEmail(string from, string to, string name)
         {
             var mailMessage = new MailMessage();
             var senderEmailID = _emailSetting.Username;
@@ -84,7 +91,7 @@ namespace RepositoryLayer.Services
                 mailMessage.From = new MailAddress(senderEmailID, "Fundoo!Notes");
             }
             mailMessage.To.Add(new MailAddress(to));
-            mailMessage.Subject = "Password Reset for Your Account";
+            mailMessage.Subject = "Collaboration";
 
             string message = $"{name}/n {from} added you as a Collaborator!";
             mailMessage.Body = message;
@@ -93,8 +100,9 @@ namespace RepositoryLayer.Services
             {
                 smtpClient.Credentials = new NetworkCredential(_emailSetting.Username, _emailSetting.Password);
                 smtpClient.EnableSsl = true;
-                smtpClient.SendMailAsync(mailMessage);
+                await smtpClient.SendMailAsync(mailMessage);
             }
+            return true;
         }
     }
 }

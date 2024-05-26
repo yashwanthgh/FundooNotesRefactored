@@ -1,66 +1,169 @@
 ﻿using BusinessLayer.Interfaces;
+using Microsoft.Extensions.Caching.Distributed;
 using ModelLayer.NoteModel;
 using RepositoryLayer.Interfaces;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace BusinessLayer.Services
 {
     public class NoteServiceBL : INoteBL
     {
-        public readonly INoteRL _note;
+        private readonly INoteRL _note;
+        private readonly IDistributedCache _cache;
 
-        public NoteServiceBL(INoteRL note)
+        public NoteServiceBL(INoteRL note, IDistributedCache cache)
         {
             _note = note;
+            _cache = cache;
         }
 
         public async Task<CreateNoteResponseModel> CreateNote(CreateNoteModel model, int labelId)
         {
-            return await _note.CreateNote(model, labelId);
+            var newNote = await _note.CreateNote(model, labelId);
+
+            var labelNotesCacheKey = $"NotesInLabel_{labelId}";
+            await _cache.RemoveAsync(labelNotesCacheKey);
+
+            return newNote;
         }
 
         public async Task<IEnumerable<NoteResponseModel>> GetAllArchivedNotes()
         {
-            return await _note.GetAllArchivedNotes();
+            var cacheKey = "ArchivedNotes";
+            var cachedData = await _cache.GetStringAsync(cacheKey);
+
+            if (!string.IsNullOrEmpty(cachedData))
+            {
+                var archivedNotes = JsonSerializer.Deserialize<IEnumerable<NoteResponseModel>>(cachedData);
+                if (archivedNotes != null)
+                    return archivedNotes;
+            }
+
+            var notes = await _note.GetAllArchivedNotes();
+
+            if (notes != null)
+            {
+                var serializedNote = JsonSerializer.Serialize(notes);
+                await _cache.SetStringAsync(cacheKey, serializedNote);
+                return notes;
+            }
+            else
+            {
+                throw new Exception("Unable to fetch data from Archives");
+            }
         }
 
         public async Task<IEnumerable<NoteResponseModel>> GetAllNotesInLabel(int labelId)
         {
-            return await _note.GetAllNotesInLabel(labelId);
+            var cacheKey = $"NotesInLabel_{labelId}";
+            var cachedData = await _cache.GetStringAsync(cacheKey);
+
+            if (!string.IsNullOrEmpty(cachedData))
+            {
+                var notesInLabel = JsonSerializer.Deserialize<IEnumerable<NoteResponseModel>>(cachedData);
+                if (notesInLabel != null)
+                    return notesInLabel;
+            }
+
+            var notes = await _note.GetAllNotesInLabel(labelId);
+
+            if (notes != null)
+            {
+                var serializedNote = JsonSerializer.Serialize(notes);
+                await _cache.SetStringAsync(cacheKey, serializedNote);
+                return notes;
+            }
+            else
+            {
+                throw new Exception("Unable to fetch Notes from Label");
+            }
         }
 
         public async Task<IEnumerable<NoteResponseModel>> GetAllTrashNotes()
         {
-            return await _note.GetAllTrashNotes();
+            var cacheKey = "AllTrashNotes";
+            var cachedData = await _cache.GetStringAsync(cacheKey);
+
+            if (!string.IsNullOrEmpty(cachedData))
+            {
+                var trashNotes = JsonSerializer.Deserialize<IEnumerable<NoteResponseModel>>(cachedData);
+                if (trashNotes != null)
+                    return trashNotes;
+            }
+
+            var notes = await _note.GetAllTrashNotes();
+
+            if (notes != null)
+            {
+                var serializedNote = JsonSerializer.Serialize(notes);
+                await _cache.SetStringAsync(cacheKey, serializedNote);
+                return notes;
+            }
+            else
+            {
+                throw new Exception("Unable to fetch data from Trash");
+            }
         }
 
-        public Task MoveToArchive(int noteId)
+        public async Task MoveToArchive(int noteId)
         {
-            return (_note.MoveToArchive(noteId));
+            await _note.MoveToArchive(noteId);
+            var note = await _note.GetNoteById(noteId);
+            var labelId = note.LabelId;
+
+            await _cache.RemoveAsync($"NotesInLabel_{labelId}");
+
+            await _cache.RemoveAsync("ArchivedNotes");
         }
 
-        public Task MoveToTrash(int noteId)
+        public async Task MoveToTrash(int noteId)
         {
-            return (_note.MoveToTrash(noteId));
+            await _note.MoveToTrash(noteId);
+
+            var note = await _note.GetNoteById(noteId);
+            var labelId = note.LabelId;
+
+            await _cache.RemoveAsync($"NotesInLabel_{labelId}");
+
+            await _cache.RemoveAsync("AllTrashNotes");
         }
 
-        public Task RemoveFromArchive(int noteId)
+        public async Task RemoveFromArchive(int noteId)
         {
-            return _note.RemoveFromArchive(noteId);
+            await _note.RemoveFromArchive(noteId);
+
+            var note = await _note.GetNoteById(noteId);
+            var labelId = note.LabelId;
+
+            await _cache.RemoveAsync($"NotesInLabel_{labelId}");
+
+            await _cache.RemoveAsync("ArchivedNotes");
         }
 
-        public Task RetriveFromTrash(int noteId)
+        public async Task RetrieveFromTrash(int noteId)
         {
-            return _note.RetriveFromTrash(noteId);
+            await _note.RetrieveFromTrash(noteId);
+
+            var note = await _note.GetNoteById(noteId);
+            var labelId = note.LabelId;
+
+            await _cache.RemoveAsync($"NotesInLabel_{labelId}");
+
+            await _cache.RemoveAsync("AllTrashNotes");
         }
 
         public async Task<CreateNoteResponseModel> UpdateNote(UpdateNoteModel model, int noteId)
         {
-            return await _note.UpdateNote(model, noteId);
+            var updatedNote = await _note.UpdateNote(model, noteId);
+
+            var labelId = updatedNote.LabelId;
+
+            await _cache.RemoveAsync($"NotesInLabel_{labelId}");
+
+            return updatedNote;
         }
     }
 }
+

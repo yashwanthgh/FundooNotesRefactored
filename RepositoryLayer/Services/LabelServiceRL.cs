@@ -34,12 +34,12 @@ namespace RepositoryLayer.Services
             return labelId;
         }
 
-        public async Task<Label> GetLabel(int labelId)
+        public async Task<Label> GetLabel(int userId, int labelId)
         {
             Label label;
             using (var connection = _context.CreateConnection())
             {
-                label = await connection.QueryFirstAsync<Label>("spGetLabelByLabelId", new { labelId }, commandType: CommandType.StoredProcedure);
+                label = await connection.QueryFirstAsync<Label>("spGetLabelByLabelId", new { labelId, userId }, commandType: CommandType.StoredProcedure);
             }
 
             if (label != null)
@@ -49,12 +49,12 @@ namespace RepositoryLayer.Services
             throw new Exception("Label not found!");
         }
 
-        public async Task<IEnumerable<Label>> GetAllLabels()
+        public async Task<IEnumerable<Label>> GetAllLabels(int userId)
         {
             IEnumerable<Label> label;
             using (var connection = _context.CreateConnection())
             {
-                label = await connection.QueryAsync<Label>("spGetAllLabels", commandType: CommandType.StoredProcedure);
+                label = await connection.QueryAsync<Label>("spGetAllLabels",new { userId }, commandType: CommandType.StoredProcedure);
             }
 
             if (label != null)

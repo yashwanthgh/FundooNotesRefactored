@@ -24,14 +24,14 @@ namespace BusinessLayer.Services
             return await _label.DeleteLabel(labelId);
         }
 
-        public async Task<IEnumerable<Label>> GetAllLabels()
+        public async Task<IEnumerable<Label>> GetAllLabels(int userId)
         {
-            return await _label.GetAllLabels();
+            return await _label.GetAllLabels(userId);
         }
 
-        public async Task<Label> GetLabel(int labelId)
+        public async Task<Label> GetLabel(int userId, int labelId)
         {
-            return await _label.GetLabel(labelId);
+            return await _label.GetLabel(userId, labelId);
         }
     }
 }

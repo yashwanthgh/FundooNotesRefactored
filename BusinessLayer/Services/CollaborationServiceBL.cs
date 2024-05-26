@@ -18,14 +18,14 @@ namespace BusinessLayer.Services
             _collaboration = collaboration;
         }
 
-        public Task AddCollaboration(int userId, CreateCollaborationModel model)
+        public Task<bool> AddCollaboration(int userId, CreateCollaborationModel model)
         {
             return _collaboration.AddCollaboration(userId, model);
         }
 
-        public async Task<IEnumerable<CollaborationResponseModel>> GetAllCollaborations()
+        public async Task<IEnumerable<CollaborationResponseModel>> GetAllCollaborations(int userId)
         {
-            return await _collaboration.GetAllCollaborations();
+            return await _collaboration.GetAllCollaborations(userId);
         }
 
         public Task RemoveCollaboration(int collaborationId)
