@@ -23,7 +23,7 @@ namespace BusinessLayer.Services
         {
             var newNote = await _note.CreateNote(model, labelId);
 
-            var labelNotesCacheKey = $"NotesInLabel_{labelId}";
+            var labelNotesCacheKey = $"NotesInLabel-{labelId}";
             await _cache.RemoveAsync(labelNotesCacheKey);
 
             return newNote;
@@ -57,7 +57,7 @@ namespace BusinessLayer.Services
 
         public async Task<IEnumerable<NoteResponseModel>> GetAllNotesInLabel(int labelId)
         {
-            var cacheKey = $"NotesInLabel_{labelId}";
+            var cacheKey = $"NotesInLabel-{labelId}";
             var cachedData = await _cache.GetStringAsync(cacheKey);
 
             if (!string.IsNullOrEmpty(cachedData))
@@ -83,7 +83,7 @@ namespace BusinessLayer.Services
 
         public async Task<IEnumerable<NoteResponseModel>> GetAllTrashNotes()
         {
-            var cacheKey = "AllTrashNotes";
+            var cacheKey = "TrashNotes";
             var cachedData = await _cache.GetStringAsync(cacheKey);
 
             if (!string.IsNullOrEmpty(cachedData))
@@ -113,7 +113,7 @@ namespace BusinessLayer.Services
             var note = await _note.GetNoteById(noteId);
             var labelId = note.LabelId;
 
-            await _cache.RemoveAsync($"NotesInLabel_{labelId}");
+            await _cache.RemoveAsync($"NotesInLabel-{labelId}");
 
             await _cache.RemoveAsync("ArchivedNotes");
         }
@@ -125,9 +125,9 @@ namespace BusinessLayer.Services
             var note = await _note.GetNoteById(noteId);
             var labelId = note.LabelId;
 
-            await _cache.RemoveAsync($"NotesInLabel_{labelId}");
+            await _cache.RemoveAsync($"NotesInLabel-{labelId}");
 
-            await _cache.RemoveAsync("AllTrashNotes");
+            await _cache.RemoveAsync("TrashNotes");
         }
 
         public async Task RemoveFromArchive(int noteId)
@@ -137,7 +137,7 @@ namespace BusinessLayer.Services
             var note = await _note.GetNoteById(noteId);
             var labelId = note.LabelId;
 
-            await _cache.RemoveAsync($"NotesInLabel_{labelId}");
+            await _cache.RemoveAsync($"NotesInLabel-{labelId}");
 
             await _cache.RemoveAsync("ArchivedNotes");
         }
@@ -149,9 +149,9 @@ namespace BusinessLayer.Services
             var note = await _note.GetNoteById(noteId);
             var labelId = note.LabelId;
 
-            await _cache.RemoveAsync($"NotesInLabel_{labelId}");
+            await _cache.RemoveAsync($"NotesInLabel-{labelId}");
 
-            await _cache.RemoveAsync("AllTrashNotes");
+            await _cache.RemoveAsync("TrashNotes");
         }
 
         public async Task<CreateNoteResponseModel> UpdateNote(UpdateNoteModel model, int noteId)
@@ -160,7 +160,7 @@ namespace BusinessLayer.Services
 
             var labelId = updatedNote.LabelId;
 
-            await _cache.RemoveAsync($"NotesInLabel_{labelId}");
+            await _cache.RemoveAsync($"NotesInLabel-{labelId}");
 
             return updatedNote;
         }

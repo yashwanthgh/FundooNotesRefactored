@@ -47,6 +47,7 @@ public class Program
         builder.Services.AddScoped<INoteBL, NoteServiceBL>();
         builder.Services.AddScoped<ICollaborationRL, CollaborationServiceRL>();
         builder.Services.AddScoped<ICollaborationBL, CollaborationServiceBL>();
+        builder.Services.AddScoped<IEmail, EmailService>();
 
         // Redis configuration
         var redisConfiguration = builder.Configuration.GetSection("Redis")["RedisConnection"];

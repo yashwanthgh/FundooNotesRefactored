@@ -23,13 +23,13 @@ namespace RepositoryLayer.Services
     {
         private readonly DapperContext _context;
         private readonly IAuthorizationRL _authService;
-        private readonly EmailSettingModel _emailSetting;
+        private readonly IEmail _email;
 
-        public LoginServiceRL(DapperContext context, IAuthorizationRL authService, EmailSettingModel emailSetting)
+        public LoginServiceRL(DapperContext context, IAuthorizationRL authService, IEmail email)
         {
             _context = context;
             _authService = authService;
-            _emailSetting = emailSetting;
+            _email = email;
         }
 
         public async Task<string> LoginUser(LoginUserModel model)
@@ -105,7 +105,7 @@ namespace RepositoryLayer.Services
 
                 connection.Execute("spUpdateResetPasswordOtp", new { UserId = getIdOfUser, Otp = otp, Expiry = DateTime.UtcNow.AddMinutes(15) }, commandType: CommandType.StoredProcedure);
 
-                return await SendOtpToEmail(new SendOtpToEmailModel { Email = model.Email, Otp = otp });
+                return await _email.SendOtpToEmail(new SendOtpToEmailModel { Email = model.Email, Otp = otp }, "Password Reset for Your Account", "OTP to reset your password: ");
             }
             return false;
         }
@@ -161,34 +161,6 @@ namespace RepositoryLayer.Services
             }
 
             return otpBuilder.ToString();
-        }
-
-        // Logic to send OTP to the users mail
-        private async Task<bool> SendOtpToEmail(SendOtpToEmailModel model)
-        {
-            if (model == null) return false;
-            if (model.Email == null) return false;
-            if (model.Otp == null) return false;
-
-            var mailMessage = new MailMessage();
-            var senderEmailID = _emailSetting.Username;
-            if (senderEmailID != null)
-            {
-                mailMessage.From = new MailAddress(senderEmailID, "Fundoo!Notes");
-            }
-            mailMessage.To.Add(new MailAddress(model.Email));
-            mailMessage.Subject = "Password Reset for Your Account";
-
-            string message = $" OTP to reset your password: {model.Otp}";
-            mailMessage.Body = message;
-
-            using (var smtpClient = new SmtpClient(_emailSetting.Server, _emailSetting.Port))
-            {
-                smtpClient.Credentials = new NetworkCredential(_emailSetting.Username, _emailSetting.Password);
-                smtpClient.EnableSsl = true;
-                await smtpClient.SendMailAsync(mailMessage);
-            }
-            return true;
         }
     }
 }

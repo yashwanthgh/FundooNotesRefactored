@@ -16,12 +16,12 @@ namespace RepositoryLayer.Services
     public class CollaborationServiceRL : ICollaborationRL
     {
         private readonly DapperContext _context;
-        private readonly EmailSettingModel _emailSetting;
+        private readonly IEmail _email;
 
-        public CollaborationServiceRL(DapperContext context, EmailSettingModel emailSetting)
+        public CollaborationServiceRL(DapperContext context, IEmail email)
         {
             _context = context;
-            _emailSetting = emailSetting;
+            _email = email;
         }
 
         public async Task<bool> AddCollaboration(int userId, CreateCollaborationModel model)
@@ -51,7 +51,7 @@ namespace RepositoryLayer.Services
                 var userInfo = connection.QueryFirstOrDefault("spGetUserInfoByEmail", new { Email = getEmailUsingUserId }, commandType: CommandType.StoredProcedure);
                 if (userInfo != null)
                 {
-                    return await SendEmail(getEmailUsingUserId, model.CollaborationEmail, userInfo.FirstName);
+                    return await _email.SendEmail(model.CollaborationEmail, "Collaboration", $"{userInfo.FirstName}, {getEmailUsingUserId} added you as a Collaborator!");
                 }
                 return false;
             }
@@ -80,29 +80,6 @@ namespace RepositoryLayer.Services
             var pattern = @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
             if (email == null) return false;
             return Regex.IsMatch(email, pattern);
-        }
-
-        private async Task<bool> SendEmail(string from, string to, string name)
-        {
-            var mailMessage = new MailMessage();
-            var senderEmailID = _emailSetting.Username;
-            if (senderEmailID != null)
-            {
-                mailMessage.From = new MailAddress(senderEmailID, "Fundoo!Notes");
-            }
-            mailMessage.To.Add(new MailAddress(to));
-            mailMessage.Subject = "Collaboration";
-
-            string message = $"{name}/n {from} added you as a Collaborator!";
-            mailMessage.Body = message;
-
-            using (var smtpClient = new SmtpClient(_emailSetting.Server, _emailSetting.Port))
-            {
-                smtpClient.Credentials = new NetworkCredential(_emailSetting.Username, _emailSetting.Password);
-                smtpClient.EnableSsl = true;
-                await smtpClient.SendMailAsync(mailMessage);
-            }
-            return true;
         }
     }
 }
